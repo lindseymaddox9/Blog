@@ -1,0 +1,50 @@
+label {
+    width:100px;
+    height:45px;
+    position:relative;
+    display: block;
+    background:#7b7bea;
+    border-radius: 100px;
+    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+    cursor:click;
+    transition: 0.2s;
+  }
+  
+  input{
+    width: 0;
+    height: 0;
+    visibility:hidden;
+  }
+  input:checked + label{
+    background:#450482;
+  }
+  input:checked + label:after{
+    right:490 px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg,#777,#3a3a3a);
+  }
+  label:actve:after{
+    width:260px;
+    
+  }
+  .background {
+    width:100vw;
+    height: 100vh;
+    background: #d5d2d2;
+    z-index: -1;
+    position:absolute;
+    transition: 0.03s;
+    
+  }
+  input:checked + label + .background{ 
+    background:#242424;
+  }
+  label:after { 
+    width: 100px;
+    height:45px;
+    position:absolute;
+    top:10px;
+    left:10px;
+    background: linear-gradient(180deg, #ee9a08,#d8860);
+    border-radius: 180;
+  /*Toggle over*/
