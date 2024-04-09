@@ -8,50 +8,31 @@
   </head>
     <body>
       <header>
-        <h1>What is your experience?</h1>
-          <p>
-            <div class="header">
-              <h1>Header</h1>
-              <p>User Name</p>
-              <label for="comment">User Name:</label></h1>
-            <textarea id="comment" placeholder="Tell Me Here"></textarea>
-            </div>
-            div class="header">
-              <h1>Header</h1>
-              <p>Blog Title</p>
-            <label for="comment">Blog Title:</label>
-            <textarea id="comment" placeholder="Here is the Title"></textarea>
-            div class="header">
-              <h1>Header</h1>
-              <p>Content</p>
-            <label for="comment">Comment:</label>
-            <textarea id="comment" placeholder="Here is the Content"></textarea>
-          </p>
+        <h1>What's on your mind?</h1>
+            <div class="clearfix">
+              <div class="card">
+                <h2>Midnight Magnolia</h2>
+                <form method="POST">
+                  <div class="input-group">
+                    <label for="msg">User Name</label>
+                    <input type="text" name="username" id="username" placeholder="Tell Me Here" />
+                  </div>
+                  <div class="input-group">
+                    <label for="msg">Blog Title</label>
+                    <input type="text" name="title" id="title" placeholder="Title Goes Here" />
+                  </div>
+                  <div class="input-group">
+                    <label for="msg">Blog Content</label>
+                    <input type="text" name="content" id="content" placeholder="Put Content Here" />
+                  </div>
+                  <div id="msg"></div>
+                  <button id="submit">submit</button>
+                </form>
       </header>
-          <nav>
-              <ul>
-                <li><a href="#">My Experience</a><li>
-                <li><a href="#">Spotlight</a><li>
-                  <form>
-                    <input type="text" placeholder="Example Name"/>
-                    <input type="text" placeholder="Here is the Title"/>
-                    <input type="text" placeholder="Here is the Content"/>
-                    <button>Submit</button>
-                  </form>
-            </ul>
-          </nav>
-      </header>
-      <main>
-        <input type="checkbox" id="darkmode-toggle"/>
-        <label for="darkmode-toggle"></label>      
-        <div class="background"></div> 
-          <h1>What's on your mind?</h1> 
-            <p> We all have experiences in life when we felt like we were in "the darkness."  Welcome to Midnight Magnolia! 
+            <aside> We all have experiences in life when we felt like we were in "the darkness."  Welcome to Midnight Magnolia! 
                 inspire and encourage you to begin to see the beauty in the darkness more often but also to appreciate the times of dark because it makes the light even better.
                 I believe we find strength in sharing. Please share your own story of "The Beauty in the Darkness."  Submit your story and possibly have it spotlighted on the blog.
-                Please change names and locations to keep it anonomous! Also, enter your favorite image song and author that represents your version of Beauty in the Darkness!!</p>  
-       
-      </main>
+                Please change names and locations to keep it anonomous! </aside>  
       <script src="assets/js/script.js"></script>  
     </body
 </html>

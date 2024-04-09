@@ -1,4 +1,39 @@
-/*backbutton reference Sam for back help*/
+
+const usernameInput = document.querySelector('#username');
+const titleInput = document.querySelector('#title');
+const contentInput = document.querySelector('#content');
+const submitButton = document.querySelector('#submit');
+const msgDiv = document.querySelector('#msg');
+
+renderLastRegistered();
+
+function displayMessage(type, message) {
+  msgDiv.textContent = message;
+  msgDiv.setAttribute('class', type);
+}
+
+function renderLastRegistered() {
+  
+}
+
+submitButton.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  const username = document.querySelector('#username').value;
+  const title = document.querySelector('#title').value;
+  const content = document.querySelector('#content').value;
+
+  if (username === '') {
+    displayMessage('error', 'Please Fill Out the Form');
+  } else if (title === '') {
+    displayMessage('error', 'Please Fill Out the Form');
+    } else if (content === '') {
+    displayMessage('error', 'Please Fill Out the Form');
+  } else {
+    displayMessage('success', 'submitted successfully');
+
+});
+
 document.getElementById('backbutton').onclick= function () {
     window.location.href = "index.html";
 }
