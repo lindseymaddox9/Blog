@@ -3,9 +3,143 @@
 }
 
 .light{
-  background-color: antiquewhite;
+  background-color: rgb(249, 241, 230);
 }
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; /* Light mode background color */
+  color: #333; /* Default text color */
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.midnight-magnolia {
+  font-size: 3em; /* Larger text size for Midnight Magnolia */
+  text-align: center;
+  font-family: cursive; /* Cursive font for Midnight Magnolia */
+  margin-top: 20px;
+}
+
+h2 {
+  color: #4372aa; /* Blue color for 'Midnight Magnolia' */
+  text-align: center;
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-group {
+  margin-top: 10px;
+}
+
+label {
+  color: #742edc; /* Purple color for labels */
+}
+
+input {
+  width: 300px;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  width: 100%;  /* Make the input field fill its container */
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  width: 100%;  /* Make the input field fill its container */
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+  button {
+  background-color: #4372aa; /* Blue color for the button */
+  color: #fff;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2e5ba6; /* Dark blue on hover */
+}
+
+aside {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+.alert-box {
+  padding: 15px;
+  background-color: #9b59b6; 
+  color: #fff; 
+  font-weight: bold; 
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.blog-content {
+  margin-bottom: 20px;
+}
+.blog-post {
+  background-color: #2f2f2; 
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.blog-title {
+  font-size: 1.2em; 
+  margin-bottom: 5px;
+}
+
+.blog-text {
+  margin-bottom: 5px;
+}
+
+textarea {
+  width: 100%;  
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.posted-by {
+  font-style: italic;
+  color: #888; 
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Add styles for the magnolia image here */
 /* Toggle
 label {
   width:80px;

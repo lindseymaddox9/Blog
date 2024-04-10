@@ -15,3 +15,13 @@ themeToggleBtn.addEventListener("click", () => {
 
   localStorage.setItem("mode", newMode);
 });
+
+
+//store it in local and fill//
+let usernameInput = document.getElementById('username');
+        let contentInput = document.getElementById('content');
+        let postedBy = document.getElementById('posted-by');
+
+
+
+
