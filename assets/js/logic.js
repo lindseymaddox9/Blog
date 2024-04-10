@@ -1,13 +1,17 @@
-<div class="card">
-<ul>
-  <li>
-    <input type="text" id="" click="Username"/>
-    <input type="text" id="" click="Content"/>
-    <input type="text" id="" click="Submit"/>
-  </li>
-</ul>  
-<div class="card-footer2">
-<button id="add-name-button" class="button">Add Image</button>
-<button id="add-email-buttonn" class="button">Add Song's Name</button>
-<button id="add--button" Upgrade? class="button">Clear All</button>  
-</div>
+const themeToggleBtn = document.querySelector("#darkmode");
+
+themeToggleBtn.addEventListener("click", () => {
+  const mode = localStorage.getItem("mode") || "dark";
+  
+  let newMode;
+
+  if (mode === "dark") {
+    newMode = "light";
+    document.body.classList = 'light'
+  } else {
+    newMode = "dark";
+    document.body.classList = 'dark'
+  }
+
+  localStorage.setItem("mode", newMode);
+});

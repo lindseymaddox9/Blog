@@ -1,4 +1,12 @@
-/*Toggle*/
+.dark{
+  background-color: darkgray;
+}
+
+.light{
+  background-color: antiquewhite;
+}
+
+/* Toggle
 label {
   width:80px;
   height:50px;
@@ -60,7 +68,7 @@ label:after {
 
 
  /*drop button*/
-.dropbutton {
+/* .dropbutton {
   background-color: #5705bc;
   color: white;
   padding: 12px;
@@ -84,7 +92,7 @@ label:after {
 }
 
 .dropdown-content  /* change this to a different box*/
-  .dropdown-content {
+  /* .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -107,11 +115,6 @@ label:after {
   font-style: italic;
 }
 
-ul{
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 500;
-  font-style: italic;
-}
 a href{
   text-color:#ef19ec
   font-family: 'Lucida Sans';
@@ -122,9 +125,9 @@ a href{
   justify-content: center;
   padding: 100px;
   flex-direction: column;
-}
+} */ */
 /* Back-button*/
-button{
+/* button{
   button height:20px;
   button width:20px;
   background-color: #ef19ec;
@@ -140,8 +143,8 @@ button{
 }
 button {
   transition-duration: 0.2s;
-}
-
+} */
+/* 
 button:hover {
   background-color: #ef19ec;
   color: white;
@@ -155,3 +158,20 @@ body{
   position:absolute;
   transition: 0.03s;
 }
+h1 {
+  text-align:center;
+}
+li {
+  text-align:center;
+  list-style-type:none;
+  display: inline-block
+  font-size: 40px;
+  border: 8px solid rgb(35, 1, 33)
+}
+
+.textbox {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+} */

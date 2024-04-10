@@ -1,11 +1,16 @@
-:root {
+.dark{
+  background-color: darkgray;
+}
+
+.light{
+  background-color: antiquewhite;
+}
+
+/* :root {
   --clr-dark: #070a13,
   --clr-light: #f1f5f9;
 }
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 body {
   font-size: 16px;
   font-family: "sans-serif", verdana;
@@ -96,24 +101,33 @@ input:hover {
   clear: both;
 }
 
-#msg {
-  visibility: hidden;
+#submit {
+  visibility: active;
   margin-top: 20px;
   font-weight: 700;
   height: 1.2em;
   font-size: 1.2em;
 }
 
-#msg.success,
-#msg.error {
+#submit.success,
+#submit.error {
   visibility: visible;
 }
 
-#msg.success {
+#submit.success {
   color: #d408ef;;
 }
 
-#msg.error {
+#submit.error {
   color: #71f862;
 }
 
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+
+
+
+ */

@@ -1,58 +1,95 @@
+// select the elements from the form
+const usernameInput = document.getElementById('username')
 
-const usernameInput = document.querySelector('#username');
-const titleInput = document.querySelector('#title');
-const contentInput = document.querySelector('#content');
-const submitButton = document.querySelector('#submit');
-const msgDiv = document.querySelector('#msg');
+const titleInput = document.getElementById('title')
+const contentInput = document.getElementById('content')
 
-renderLastRegistered();
 
-function displayMessage(type, message) {
-  msgDiv.textContent = message;
-  msgDiv.setAttribute('class', type);
+const blogForm = document.getElementById('blog-form')
+// check localstore for blog array
+const blogArray = JSON.parse(localStorage.getItem('blogs')) || []
+
+function handleUserInput(event){
+event.preventDefault();
+
+const blogObj = {
+  title: titleInput.value,
+  username: usernameInput.value,
+  content: contentInput.value
 }
 
-function renderLastRegistered() {
-  
+blogArray.push(blogObj)
+localStorage.setItem('blogs', JSON.stringify(blogArray))
+window.location.href = './blog.html'
 }
 
-submitButton.addEventListener('click', function (event) {
-  event.preventDefault();
 
-  const username = document.querySelector('#username').value;
-  const title = document.querySelector('#title').value;
-  const content = document.querySelector('#content').value;
+blogForm.addEventListener('submit', handleUserInput)
 
-  if (username === '') {
-    displayMessage('error', 'Please Fill Out the Form');
-  } else if (title === '') {
-    displayMessage('error', 'Please Fill Out the Form');
-    } else if (content === '') {
-    displayMessage('error', 'Please Fill Out the Form');
-  } else {
-    displayMessage('success', 'submitted successfully');
+// document.getElementById(`submit`).addEventListener("click",function() {
+//   const title = document.getElementById(`username`).value;
+//   const username = document.getElementById(`title`).value;
+//   const content = document.getElementById(`content`).value;
 
-});
+//   const blogs = JSON.parse(localStorage.getItem(`blogs`)) || [];
+//   let newBlog = {title, username, content};
+//   blogs.push(newBlog);
+//   localStorage.setItem('blogs', JSON.stingify(blogs));
+//   window.location.href ="index2.html";
+//   });
+//  if(localStorage){
+//   contentDisplay.textContent = `blog-content`;
+//  }else{
+//   contentDisplay.textContent = `no content stored.`;
+//  }
+//   document.getElementById('blogs').addEventListener('submit', function(event){
 
-document.getElementById('backbutton').onclick= function () {
-    window.location.href = "index.html";
-}
-console.log(localStorage);
-const BlogList = JSON.parse (localStorage.getItem('DataList')) || [];
-const (BlogList.length > 0);{
-    let postHTML ='ul>';
-     BlogList.forEach(element) => {
-        console.log(element);
-        postHTML += 
-        <li> class="BlogArea">
-            <h4> UserName;<h4> ${h4.UserName}<br>
-            <h4> Title;<h4> ${h4.Title}<br>
-            <h4> Content;<h4> ${h4.Content}<br>
-     }
+//   const userName = document.querySelector('#username').value;
+//   const lastNameInput = document.querySelector('#title').value;
+//   const emailInput = document.querySelector('#content').value;
+//   const Data ={
+//     userName:userName,
+//     title:title,
+//     content:content
+//   }
 
-}
+//   let DataList = localStorage.getItem('DataList');
+//   DataList = DataList.JSON.parse(DataList)|| [];
 
-postsHTML += '<ul>';
-        console.log(BlogPostList.length)
+//   DataList.push(formData);
 
+//   localStorage.setItem('DataList', JSON.stringify(DataList));
 
+// })
+// /*window object*/
+// console.log(window);
+// console.log(window.document);
+// console.log(document.documentElement);
+// console.log(document.head);
+
+// //alert//
+
+// function checkforblank(){
+//  if(document.getElementById('username').value=="") {
+//   alert("Please Complete Form");
+//   return false;
+// }
+// }
+
+// submitButton.addEventListener('click', function (event){
+// event.preventDefault();
+
+// const username = document.querySelector('#username');
+// const title = document.querySelector('#title');
+// const content = document.querySelector('#content');
+
+// if (username.value=== '') {
+//   alert('Please Fill Out the Form');
+// } else if (title.value=== '') {
+//   alert('Please Fill Out the Form');
+//   } else if (content.value=== '') {
+//   alert('Please Fill Out the Form');
+// } else {
+//   alert('submitted');
+// }
+// });
