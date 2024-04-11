@@ -1,0 +1,116 @@
+.dark{
+  background-color: darkgray;
+}
+
+.light{
+  background-color: rgb(241, 237, 232);
+}
+
+.midnight-magnolia {
+  font-size: 3em; 
+  text-align: center;
+  font-family: cursive; 
+  margin-top: 20px;
+}
+
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; 
+  color: #333; 
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+h2 {
+  color: #b03bf5; 
+  text-align: center;
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  margin-top: 10px;
+}
+
+label {
+  color: #742edc; 
+}
+
+input {
+  width: 300px;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #bc05dc; 
+  color: #fff;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b305e7; 
+}
+
+aside {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: #1a1a1a; /* Dark mode background color */
+      color: #f5f5f5; /* Dark mode text color */
+  }
+
+  h1 {
+      color: #8359b1; /* dark mode */
+  }
+
+  label {
+      color: #5e17a0; /dark mode */
+  }
+
+  button {
+      background-color: #7c22dc; /*dark mode */
+  }
+
+  button:hover {
+      background-color: #7f08ce; /*dark mode */
+  }
+}
+
+.alert-box {
+  padding: 15px;
+  background-color: #9b59b6; 
+  color: #fff;  
+  font-weight: bold;  
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
