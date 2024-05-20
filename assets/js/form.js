@@ -9,21 +9,21 @@ const blogForm = document.getElementById('blog-form')
 // check localstore for blog array
 const blogArray = JSON.parse(localStorage.getItem('blogs')) || []
 
-function handleUserInput(event){
-event.preventDefault();
+// function handleUserInput(event){
+// event.preventDefault();
 
-const blogObj = {
-  title: titleInput.value,
-  username: usernameInput.value,
-  content: contentInput.value
-}
+// const blogObj = {
+//   title: titleInput.value,
+//   username: usernameInput.value,
+//   content: contentInput.value
+// }
 
-blogArray.push(blogObj)
-localStorage.setItem('blogs', JSON.stringify(blogArray))
-window.location.href = './blog.html'
-}
+// blogArray.push(blogObj)
+// localStorage.setItem('blogs', JSON.stringify(blogArray))
+// window.location.href = './blog.html'
+// }
 
-blogForm.addEventListener('submit', handleUserInput)
+// blogForm.addEventListener('submit', handleUserInput)
 
                     //alert//
 // Add submit event listener to form
