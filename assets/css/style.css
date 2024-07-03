@@ -114,3 +114,10 @@ p {
   border-radius: 5px;
   margin-bottom: 15px;
 }
+
+/* Add a glow effect on hover */
+@keyframes glow {
+  0% { box-shadow: 0 0 5px #00ccff; }
+  50% { box-shadow: 0 0 20px #00ccff; }
+  100% { box-shadow: 0 0 5px #00ccff; }
+}
